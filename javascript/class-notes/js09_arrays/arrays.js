@@ -8,7 +8,11 @@ console.log("***** ARRAYS ******");
 //* ---------------------------------------------------------
 
 // ! 1.Yöntem (Array Literal) - Tercih edilen yöntem
+<<<<<<< HEAD
+const isimler = ["ahmet", "ismet", "can", "canan", "Matheww"];
+=======
 const isimler = ["ahmet", "ismet", "can", "canan", "matheww"];
+>>>>>>> 76cdf24785451181fcabc442d07998b5f5731661
 console.log(isimler);
 console.log(typeof isimler);
 console.log(isimler.length);
@@ -47,6 +51,13 @@ console.log(isimler.at(-1));
 
 //!  Diziye veri yazma
 // const isimler = ["ahmet", "ismet", "can", "canan", "Matheww"];
+<<<<<<< HEAD
+isimler[1] = "Saffet";
+console.log(isimler);
+
+//!Uncaught TypeError: Assignment to constant variable.
+isimler = ["Ali", "Veli"];
+=======
 isimler[1] = "saffet";
 console.log(isimler);
 
@@ -235,3 +246,4 @@ console.log(yasIlk30, yasSon30);
 
 const foundIndex = yasArray.findIndex((yas) => yas >= 30);
 console.log(foundIndex);
+>>>>>>> 76cdf24785451181fcabc442d07998b5f5731661
