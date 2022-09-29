@@ -1,5 +1,5 @@
 //*=================================================
-//*              ASYNC-AWAIT
+//*               ASYNC-AWAIT
 //*=================================================
 //? Async-Await ECMAScript 2017 ile Javascript diline eklenmistir.
 //? Aslinda Promise yapisinin syntax olarak basitlestirilmis halidir.
@@ -19,11 +19,11 @@
 //* degerlerinin dondurulmesine ile kodun calismasi devam eder.
 
 let isError = false;
-const getNews = async function () {
-  const API_KEY = "d68787ee29694c97adb44ca92dd999ad";
-  const url = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=" + API_KEY;
 
-  
+const getNews = async function () {
+  const API_KEY = "55e3f1fdc1c94581b6b11537c9b8f8bf";
+  const url =
+    "https://newsapi.org/v2/top-headlines?country=tr&apiKey=" + API_KEY;
 
   try {
     const res = await fetch(url);
