@@ -13,7 +13,7 @@ const AddTutorial = () => {
 
   return (
     <div className="container mt-4">
-      <h1 className="display-6 text-danger">Add Your Tutorial</h1>
+      <h1 className="display-6 text-danger text-center">Add Your Tutorial</h1>
       <form onSubmit={handleSubmit}>
         <div className="mt-4">
           <label htmlFor="title" className="form-label">
