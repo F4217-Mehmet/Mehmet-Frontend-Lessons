@@ -1,11 +1,9 @@
 import { useState } from "react";
 
-
-
 const AddTutorial = () => {
 
   const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
 
@@ -24,7 +22,7 @@ const AddTutorial = () => {
 
         <div className="mt-4">
           <label htmlFor="desc" className="form-label">Description</label>
-          <input type="text" className="form-control" id="desc" placeholder="Enter your description" value={desc} onChange={(e)=> setDesc(e.target.value)} required/>
+          <input type="text" className="form-control" id="desc" placeholder="Enter your description" value={description} onChange={(e)=> setDescription(e.target.value)} required/>
         </div>
 
         <button className="btn btn-danger mt-4">Submit</button>

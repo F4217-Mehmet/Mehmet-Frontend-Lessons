@@ -1,11 +1,7 @@
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 
-const TutorialList = () => {
-  const tutorials = [
-    { id: 1, Title: "JS", Description: "JS is a programming Language" },
-    { id: 2, Title: "React", Description: "JS library for UI design" },
-  ];
+const TutorialList = ({tutor}) => {
 
   return (
     <div className="container mt-4">
@@ -13,8 +9,8 @@ const TutorialList = () => {
         <thead>
           <tr>
             <th scope="col">#id</th>
-            <th scope="col">Title</th>
-            <th scope="col">Description</th>
+            <th scope="col">title</th>
+            <th scope="col">description</th>
             <th scope="col" className="text-center">
               Edit
             </th>
@@ -22,13 +18,13 @@ const TutorialList = () => {
         </thead>
 
         <tbody>
-          {tutorials.map((item)=> {
-            const {id, Title, Description} = item;
+          {tutor?.map((item)=> {
+            const {id, title, description} = item;
             return (
               <tr key={id}>
                 <th>{id}</th>
-                <td>{Title}</td>
-                <td>{Description}</td>
+                <td>{title}</td>
+                <td>{description}</td>
                 <td>
                   <FaEdit size={20} type="button" className="text-danger" />
                   <AiFillDelete
