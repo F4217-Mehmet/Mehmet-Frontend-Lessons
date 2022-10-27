@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 `;
 export const Image = styled(Logo)`
  @media (max-width: ${({ theme }) => theme.responsive}) {
-    margin: 2rem 0;
+    margin: 2rem 0;}
 `;
 
 export default StyledHeader;
