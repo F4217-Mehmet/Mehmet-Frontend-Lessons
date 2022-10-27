@@ -1,10 +1,22 @@
 import Header from "./components/Header";
+import { ThemeProvider } from "styled-components";
+
+const style= {
+  colors: {
+    header: "#fff",
+    body: "#fff",
+    footer: "#8A1CC4A"
+  },
+  margins: {},
+  responsive: "768px",
+}
 
 const App = () => {
   return (
-    <>
-    <Header/>
-    </>
+    <ThemeProvider theme={style}>
+    <Header />
+    
+    </ThemeProvider>
   );
 };
 
