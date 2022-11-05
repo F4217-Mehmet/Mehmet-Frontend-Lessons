@@ -14,17 +14,42 @@ import "./Content.css";
 
 // ? Dahili bir resim eklemek icin import yapmak gereklidir.
 import img2 from "../img/spring2.jpg";
+import { useState } from "react";
 
 const Content = () => {
   //* JS alanı
+  const [deger, setDeger] = useState(0);
+  const [baslik, setBaslik]= useState("I hope to learn React well");
+
   const imgStyle = {
     display: "block",
     width: "300px",
     margin: "1rem auto",
+    
   };
   return (
     //* JSX alanı
     <div>
+      <div>
+        <p style={{width: "40%", height: "50px", "text-align": "center", border: "2px solid red", margin:"auto"}}>{baslik}</p>
+      </div>
+      
+      <div style={{ "text-align": "center", backgroundColor: "aqua" }}>
+        <button
+          style={{ "text-align": "center", backgroundColor: "green" }}
+          onClick={() => setDeger(deger + 1)}
+        >
+          Arttır
+        </button>
+        <p>{deger}</p>
+        <button
+          style={{ "text-align": "center", backgroundColor: "red" }}
+          button
+          onClick={() => setDeger(deger - 1)}
+        >
+          Azalt
+        </button>
+      </div>
       {/* Inline Style */}
       <h2 style={{ color: "red" }}>React JS</h2>
       <p style={{ backgroundColor: "lightgreen" }}>
